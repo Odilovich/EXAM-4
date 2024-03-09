@@ -1,0 +1,179 @@
+#comment {
+    width: 100%;
+
+    .comment-title {
+        color: #140A32;
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.96px;
+    }
+
+    .comment__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .card {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px;
+            width: 367px;
+            height: 421px;
+            border-radius: 20px;
+            border: 1px solid rgba(47, 43, 67, 0.15);
+
+            .comment__wrapper--cardTop {
+
+                &-user {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    margin-bottom: 24px;
+
+                    &-icon {
+                        width: 50px;
+                        height: 50px;
+                        padding: 13px;
+                        border-radius: 50%;
+                        background: #115B82;
+                    }
+
+                    &-content {
+                        &-title {
+                            color: #140A32;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        &-text {
+                            color: rgba(47, 43, 67, 0.50);
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+                &-text {
+                    width: 307px;
+                    color: #140A32;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%;
+                }
+
+
+            }
+
+            .comment__wrapper--cardBottom {
+                &-title {
+                    color: rgba(47, 43, 67, 0.50);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                &-text {
+                    width: 307px;
+                    color: #33836E;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 150%;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    #comment {
+        width: 100%;
+    
+        .comment-title {
+            color: #140A32;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.96px;
+            margin-bottom: 20px;
+        }
+    
+        .comment__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            .card {
+    
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 30px;
+                width: 100%;
+                max-width: 367px;
+                height: 421px;
+                border-radius: 20px;
+                border: 1px solid rgba(47, 43, 67, 0.15);
+    
+                .comment__wrapper--cardTop {
+    
+                    &-user {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        margin-bottom: 24px;
+    
+                        &-icon {
+                            width: 50px;
+                            height: 50px;
+                            padding: 13px;
+                            border-radius: 50%;
+                            background: #115B82;
+                        }
+    
+                        &-content {
+                            &-title {
+                                color: #140A32;
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+    
+                            &-text {
+                                color: rgba(47, 43, 67, 0.50);
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+    
+                    &-text {
+                        width: 307px;
+                        color: #140A32;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 160%;
+                    }
+    
+    
+                }
+    
+                .comment__wrapper--cardBottom {
+                    &-title {
+                        color: rgba(47, 43, 67, 0.50);
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+    
+                    &-text {
+                        width: 307px;
+                        color: #33836E;
+                        font-size: 14px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
