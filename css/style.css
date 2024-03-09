@@ -788,6 +788,10 @@ main {
   background: #2a715e;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .none {
   display: none;
 }

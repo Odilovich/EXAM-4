@@ -9,6 +9,7 @@ let cardPopup = $('#card-popup');
 let formPopup = $('#form-popup');
 let cardAcces = $('#card-acces');
 let accesCloseBtn = $('#close-btn');
+let acces = $('#acces')
 
 bgPopup.addEventListener('click', () => {
     toggle()
@@ -36,15 +37,17 @@ backBtn.addEventListener('click', () => {
     
 });
 
-// popupForm.addEventListener('submit', () => {
-//     cardPopup.classList.add('none')
-//     cardAcces.classList.add('flex')
-// })
+popupForm.addEventListener('submit', () => {
+    popupSection.classList.remove('none')
+    
+    acces.classList.toggle('none')
 
-// cardPopup.addEventListener('click', (e) => {
-//     if (e.target.classList.contains('acces__wrapper-btn')) {
-//         togglePopup()
-//     }
-// })
+})
+
+cardPopup.addEventListener('click', (e) => {
+    if (e.target.classList.contains('acces__wrapper-btn')) {
+        togglePopup()
+    }
+})
 
 
